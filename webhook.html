@@ -1,0 +1,31 @@
+<html>
+    <header>
+        <title>NVR Webhook Tool</title>
+        <link rel="stylesheet" href="webhook\css.css">
+        <script defer type="module" src="webhook\script.js"></script>
+    </header>
+
+    <body>
+        <div class="title" id="title">NVR</div>
+        <div class="main-panel">
+            <div class="tab">
+                <button class="send-button" id="sendButton">Send</button>
+                <button class="delete-button" id="deleteButton">Delete</button>
+            </div>
+
+            <div class="input-area">
+                <input type="text" placeholder="Username" class="username-input" id="usernameInput">
+                <input type="text" placeholder="Webhook" class="webhook-input" id="webhookInput">
+                <input type="text" placeholder="Message" class="message-input" id="messageInput">
+            </div>
+        </div>
+        <div class="message hide" id="message">
+            <div class="sent" id="sent">
+                Sent message!
+            </div>
+            <div class="deleted" id="deleted">
+                Deleted webhook!
+            </div>
+        </div>
+    </body>
+</html>
