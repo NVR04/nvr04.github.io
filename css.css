@@ -1,0 +1,521 @@
+
+div{
+    cursor: default;
+}
+
+*{
+    z-index: 1;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    transform: scale(1.1); 
+}
+
+.hello{
+    z-index: 1;
+    position: absolute;
+    top: 1%;
+    left: 49%;
+    transform: translate(-50%, 0);
+}
+
+.hover-please{
+    transform: translate(-15%, 0);
+    font-size: 60%;
+    color: black;
+}
+
+.pulse{
+    animation: pulse 0.3s infinite;
+}
+
+.hide{
+    animation: hide 0.25s;
+    transition: opacity 0.25s;
+    opacity: 0%;
+}
+
+.upper{
+    z-index: 10;
+}
+
+@keyframes pulse {
+    from {transform: scale(100%);} to {transform: scale(80%);}
+}
+
+
+
+
+.lbl1{
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 0px;
+    color: rgba(255, 150, 255, 1);
+    filter: drop-shadow(0px 0px 10px rgba(255, 150, 255, 1));
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 150, 255, 1));
+}
+.lbl2{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top:20px;
+    color: rgba(255, 150, 255, 1);
+    filter: drop-shadow(0px 0px 10px rgba(255, 150, 255, 1));
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 150, 255, 1));
+}
+.lbl3{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top:40px;
+    color: rgba(255, 150, 255, 1);
+    filter: drop-shadow(0px 0px 20px rgba(255, 150, 255, 1));
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(255, 150, 255, 1));
+}
+
+
+
+
+
+
+
+
+
+.loading{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("https://media.tenor.com/GiO4XNKti44AAAAd/retrowave-synthwave.gif");
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    opacity: 100%;
+    height: 100%;
+    transition: opacity 0.25s;
+}
+
+.loading2{
+    position: absolute;
+    filter: brightness(200%);
+    top: 50%;
+    left: 50%;
+    -webkit-filter: brightness(0%);
+    color: rgba(255, 0, 255, 1);
+    transform: translate(-50%, -50%);
+}
+
+
+.discord-acc{
+    position: absolute;
+    border: none;
+    scale: 80%;
+    left: 60px;
+    top: 45px;
+    transform: translate(-25%, -25%);
+    filter: drop-shadow(0px 0px 5px black);
+    -webkit-filter: drop-shadow(0px 0px 5px black);
+    transition: filter 0.5s, -webkit-filter 0.5s, opacity 0.5s;
+    opacity: 0.75;
+}
+
+.discord-acc:hover{
+    filter: drop-shadow(0px 0px 15px black);
+    -webkit-filter: drop-shadow(0px 0px 15px black);
+    opacity: 1;
+    transition: filter 0.5s, -webkit-filter 0.5s, opacity 0.5s;
+}
+
+.discord-servers{
+    position: absolute;
+    left: 97%;
+    top: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    transform: translate(0%, 0%);
+    filter: drop-shadow(0px 0px 10px black);
+    -webkit-filter: drop-shadow(0px 0px 10px black);
+    transition: width 0.5s, height 0.5s, padding-left 0.5s, transform 1s;
+}
+
+.discord-servers:hover{
+    padding-left: 10px;
+    transform: translate(-90%, 0);
+    transition: padding-left 0.5s, transform 1s;
+}
+
+.discord-server{
+    margin: 5px;
+    padding: 5px;
+    filter: drop-shadow(0px 0px 5px black);
+    -webkit-filter: drop-shadow(0px 0px 5px black);
+    transition: filter 0.5s, -webkit-filter 0.5s, opacity 0.5s;
+    opacity: 0.75;
+}
+
+.discord-server:hover{
+    filter: drop-shadow(0px 0px 15px black);
+    -webkit-filter: drop-shadow(0px 0px 15px black);
+    opacity: 1;
+    transition: filter 0.5s, -webkit-filter 0.5s, opacity 0.5s;
+}
+
+
+.servers-div{
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    color: rgba(255, 200, 255, 1);
+    transform: rotate(-90deg) scale(200%) translate(0%, 0);
+    transition: opacity 0.5s;
+}
+
+
+.label{
+    margin: 5px;
+    padding: 5px;
+    filter: drop-shadow(0px 0px 5px white);
+    -webkit-filter: drop-shadow(0px 0px 5px white);
+    transition: filter 0.5s, -webkit-filter 0.5s, opacity 0.5s;
+    opacity: 50%;
+}
+.label:hover{
+    opacity: 100%;
+}
+
+.button{
+    position: absolute;
+    z-index: 11;
+    top: -3.5px;
+    left: 120px;
+    background-color: rgba(255, 200, 255, 1);
+    color: rgba(255, 50, 255, 1);
+    filter: drop-shadow(0px 0px 10px rgba(255, 50, 255, 1));
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 50, 255, 1));
+    transform: scale(80%);
+    border-radius: 20px;
+    padding: 10px;
+    width: 45px;
+    transition: filter 0.5s, -webkit-filter 0.5s, opacity 0.5s;
+}
+.button:hover{
+    filter: drop-shadow(0px 0px 20px rgba(255, 50, 255, 1));
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(255, 50, 255, 1));
+    transition: filter 0.5s, -webkit-filter 0.5s, opacity 0.5s;
+}
+
+
+.iframe{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5px);
+}
+
+.iframe-text{
+    color: rgba(255, 150, 255, 1);
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    filter: drop-shadow(0px 0px 15px rgba(255, 150, 255, 1));
+    -webkit-filter: drop-shadow(0px 0px 15px rgba(255, 150, 255, 1));
+}
+
+.socials-panel{
+    position: absolute;
+    top: 210px;
+    left: 15px;
+}
+
+.social{
+    font-size: 400%;
+    padding-right: 2.5px;
+    padding-left: 2.5px;
+    color: rgba(255, 150, 255, 0.5);
+    filter: drop-shadow(0px 0px 5px rgba(255, 150, 255, 1));
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(255, 150, 255, 1));
+    transition: padding-left 0.5s, padding-right 0.5s, filter 0.5s, -webkit-filter 0.5s, color 0.5s, scale 0.5s;
+}
+
+.social:hover{
+    padding-right: 10px;
+    padding-left: 10px;
+    color: rgba(255, 150, 255, 1);
+    filter: drop-shadow(0px 0px 12.5px rgba(255, 150, 255, 1));
+    -webkit-filter: drop-shadow(0px 0px 12.5px rgba(255, 150, 255, 1));
+    transition: padding-left 0.5s, padding-right 0.5s, filter 0.5s, -webkit-filter 0.5s, color 0.5s;
+}
+
+.center-panel{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    padding: 50px;
+    width: 400px;
+    height: 400px;
+    filter: drop-shadow(0px 0px 10px black);
+    -webkit-filter: drop-shadow(0px 0px 10px black);
+    transition: width 0.5s, height 0.5s;
+}
+.center-panel:hover{
+    width: 380px;
+    height: 380px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.inner-panel{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);   
+    background-color: rgba(0, 0, 0, 0.00);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0px 0px 10px black);
+    -webkit-filter: drop-shadow(0px 0px 10px black);
+    transition: width 0.5s, height 0.5s;
+}
+
+.inner-panel:hover{
+    width: 280px;
+    height: 280px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.text{
+    color: rgba(255, 200, 255, 1);
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+}
+
+.known-language{
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    border-bottom: 0px solid white;
+    color: rgba(255, 200, 255, 1);
+    transition: filter 0.5s, -webkit-filter 0.5s, border-bottom 0.5s, list-style-type 0.5s, color 0.5s;
+}
+.known-language:hover{
+    list-style-type: "➜";
+    filter: drop-shadow(0px 0px 5px rgba(255, 150, 255, 1));
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(255, 150, 255, 1));
+    bottom: 0;
+    color: rgba(255, 100, 250, 1);
+    border-bottom: 5px solid rgba(255, 150, 255, 1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: filter 0.25s, -webkit-filter 0.25s, border-bottom 0.25s, list-style-type 0.25s, color 0.25s;
+}
+
+.show-servers{
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    padding: 20px;
+    width: 30px;
+    height: 400px;
+    filter: drop-shadow(0px 0px 10px black);
+    -webkit-filter: drop-shadow(0px 0px 10px black);
+    transition: width 0.5s, height 0.5s;
+}
+
+.language-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+    filter: drop-shadow(0px 0px 40px white);
+    -webkit-filter: drop-shadow(0px 0px 40px white);
+}
+
+
+@keyframes show-servers {
+    from {transform: translate(0%, 0%)} to {transform: translate(-90%, 0);}
+}
+@keyframes hide-servers {
+    from {transform: translate(-90%, 0%)} to {transform: translate(0%, 0);}
+}
+
+
+@keyframes hide{
+    from {opacity: 1} to {opacity: 0}
+}
+
+@media only screen and (max-width: 1000px) {
+    #myVideo{
+        position: fixed;
+        right: -50%;
+        bottom: 0;
+        width: 200%;
+        height: 100%;
+        background-size: cover;
+        filter: blur(15px);
+        -webkit-filter: blur(15px);
+        transform: scale(1.1); 
+    }
+
+    .discord-servers{
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .center-panel{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.25);
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        border-radius: 20px;
+        padding: 50px;
+        width: 200px;
+        height: 200px;
+        filter: drop-shadow(0px 0px 10px black);
+        -webkit-filter: drop-shadow(0px 0px 10px black);
+        transition: width 0.5s, height 0.5s;
+    }
+    .center-panel:hover{
+        width: 200px;
+        height: 200px;
+        transition: width 0.5s, height 0.5s;
+    }
+    
+    .inner-panel{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);   
+        background-color: rgba(0, 0, 0, 0.00);
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        border-radius: 20px;
+        padding: 50px;
+        width: 100px;
+        height: 100px;
+        filter: drop-shadow(0px 0px 10px black);
+        -webkit-filter: drop-shadow(0px 0px 10px black);
+        transition: width 0.5s, height 0.5s;
+    }
+    
+    .inner-panel:hover{
+        width: 100px;
+        height: 100px;
+        transition: width 0.5s, height 0.5s;
+    }
+
+    .language-list{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        font-size: 20px;
+        transform: translate(-52.5%, -57%) scale(50%);
+        filter: drop-shadow(0px 0px 40px rgba(255, 50, 255, 1));
+        -webkit-filter: drop-shadow(0px 0px 40px rgba(255, 50, 255, 1));
+    }
+
+    .known-language{
+        list-style-type: none;
+        align-items: center;
+        text-align: center;
+        border-bottom: 0px solid white;
+        background-color: rgba(255, 200, 255, 1);
+        color: rgba(255, 50, 255, 1);
+        border-radius: 20px;
+        margin: 3.5px;
+        transition: border-bottom 0.5s, list-style-type 0.5s, color 0.5s;
+    }
+    .known-language:hover{
+        list-style-type: none;
+        align-items: center;
+        border-radius: 20px;
+        text-align: center;
+        border-bottom: 0px solid white;
+        background-color: rgba(255, 200, 255, 1);
+        color: rgba(255, 50, 255, 1);
+        filter: drop-shadow(0px 0px 0px transparent);
+        -webkit-filter: drop-shadow(0px 0px 0px transparent);
+        margin: 3.5px;
+        transition: border-bottom 0.5s, list-style-type 0.5s, color 0.5s;
+    }
+
+    .socials-panel{
+        position: absolute;
+        display: block;
+        justify-content: space-evenly;
+        top: 132.5px;
+        left: 50%;
+        width: 100%;
+        transform: scale(70%) translate(-50%, 0)
+    }
+    .social{
+        font-size: 400%;
+        padding-right: 2.5px;
+        padding-left: 2.5px;
+        color: rgba(255, 150, 255, 1);
+        filter: drop-shadow(0px 0px 5px rgba(255, 150, 255, 1));
+        -webkit-filter: drop-shadow(0px 0px 5px rgba(255, 150, 255, 1));
+        transition: padding-left 0.5s, padding-right 0.5s, filter 0.5s, -webkit-filter 0.5s, color 0.5s, scale 0.5s;
+    }
+    
+    .social:hover{
+        padding-right: 2.5px;
+        padding-left: 2.5px;
+        color: rgba(255, 150, 255, 1);
+        filter: drop-shadow(0px 0px 5px rgba(255, 150, 255, 1));
+        -webkit-filter: drop-shadow(0px 0px 5px wh rgba(255, 150, 255, 1));
+        transition: padding-left 0.5s, padding-right 0.5s, filter 0.5s, -webkit-filter 0.5s, color 0.5s;
+    }
+
+    .discord-acc{
+        position: absolute;
+        width: 550px;
+        top: -30px;
+        left: 50%;
+        scale: 60%;
+        transform: translate(-70%, 0);
+        filter: drop-shadow(0px 0px 5px black);
+        -webkit-filter: drop-shadow(0px 0px 5px black);
+        transition: filter 0.5s, -webkit-filter 0.5s, opacity 0.5s;
+        opacity: 1;
+    }
+
+    .discord-acc:hover{
+        filter: drop-shadow(0px 0px 5px black);
+        -webkit-filter: drop-shadow(0px 0px 5px black);
+        opacity: 1;
+        transition: filter 0.5s, -webkit-filter 0.5s, opacity 0.5s;
+    }
+
+}

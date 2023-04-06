@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(100, 100, 100);
+    opacity: 100%; /* Firefox */
+    transition: color 0.5s;
+}
+ 
+ 
+ 
+body{
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+ 
+button{
+    display: flex;
+    position: inherit;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    outline: none;
+    border-style: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+button:hover{
+    background-color: rgb(30, 30, 30);
+    transition: background-color 0.5s;
+}
+
+input{
+    position: inherit;
+    display: flex;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    outline: none;
+    border-style: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    text-align: center;
+}
+ 
+input:hover{
+    background-color: rgb(30, 30, 30);
+    transition: background-color 0.5s;
+}
+
+
+    
+
+
+.fr-panel{
+    background-color: rgb(20, 20, 20);
+    outline: none;
+    width: 360;
+    height: 190;
+    border-style: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    padding: 5px;
+    margin: 1.5px;
+}
+.fr-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center horizontally */
+    align-items: center;
+    border-radius: 20px;
+    width: 800px;
+}
+
+
+.fr-pop-up-positive{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: --pop-down 0.5s;
+    background-color: rgb(30, 30, 30);
+    filter: drop-shadow(0px 0px 10px green);
+    -webkit-filter: drop-shadow(0px 0px 10px green);;
+}
+.fr-pop-up-negative{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: --pop-down 0.5s;
+    background-color: rgb(30, 30, 30);
+    filter: drop-shadow(0px 0px 10px red);
+    -webkit-filter: drop-shadow(0px 0px 10px red);;
+}
+
+.fr-pop-reset{
+    position: absolute;
+    top: -1%;
+    animation: --pop-reset 0.5s;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+
+@keyframes --pop-down{
+    from {
+        top: -1%;
+        transform: translate(0, -100%);
+    } to {
+        top: 1%;
+    }
+}
+
+@keyframes --pop-reset{
+    from {
+        top: 1%;
+        transform: translate(0, 100%);
+    } to {
+        top: -1%;
+        transform: translate(0, -100%);
+    }
+}
